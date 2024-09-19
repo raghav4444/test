@@ -82,7 +82,7 @@ console.log(fruitProcessor(2, 3));
 // Reviewing Functions
 const calcAge = function (birthYeah) {
   return 2037 - birthYeah;
-}
+};
 
 const yearsUntilRetirement = function (birthYeah, firstName) {
   const age = calcAge(birthYeah);
@@ -95,8 +95,7 @@ const yearsUntilRetirement = function (birthYeah, firstName) {
     console.log(`${firstName} has already retired 🎉`);
     return -1;
   }
-}
+};
 
-console.log(yearsUntilRetirement(1991, 'Jonas'));
-console.log(yearsUntilRetirement(1950, 'Mike'));
-*/
+console.log(yearsUntilRetirement(1991, "Jonas"));
+console.log(yearsUntilRetirement(1950, "Mike"));
