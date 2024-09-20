@@ -231,3 +231,130 @@ const totalBill = [
 ];
 console.log(totalBill);
 */
+
+// const Raghav = {
+//   firstName: "Raghvendra",
+//   lastName: "singh",
+//   age: 2037 - 2004,
+//   job: "programmer",
+//   friends: ["Tushar", "Prince", "Ayush"],
+// };
+
+// console.log(Raghav);
+
+// console.log(Raghav.firstName);
+// console.log(Raghav["lastName"]);
+// console.log(Raghav["friends"]);
+
+// const nameKey = "Name";
+// console.log(Raghav["first" + nameKey]);
+// console.log(Raghav["last" + nameKey]);
+
+/*
+const raghav = {
+  fullName: "Raghvendra Singh",
+  mass: 62,
+  height: 1.72,
+  calcBMI: function () {
+    raghav.bmi = this.mass / this.height ** 2;
+    return raghav.bmi;
+  },
+};
+
+const prateek = {
+  fullName: "Prateek Pal",
+  mass: 70,
+  height: 1.67,
+  calcBMI: function () {
+    prateek.bmi = this.mass / this.height ** 2;
+    return prateek.bmi;
+  },
+};
+
+console.log(raghav.calcBMI());
+prateek.calcBMI();
+*/
+// console.log(raghav.bmi, prateek.bmi);
+
+// "John Smith's BMI (28.3) is higher than Mark Miller's (23.9)!"
+
+// if (mark.bmi > john.bmi) {
+//   console.log(
+//     `${mark.fullName}'s BMI (${mark.bmi}) is higher than ${john.fullName}'s BMI (${john.bmi})`
+//   );
+// } else if (john.bmi > mark.bmi) {
+//   console.log(
+//     `${john.fullName}'s BMI (${john.bmi}) is higher than ${mark.fullName}'s BMI (${mark.bmi})`
+//   );
+// }
+
+//////////////////////////////////////////
+// LOOPING STATEMENTS
+
+// for (let i = 1; i <= 10; i++) {
+//   console.log(`Lifting weight repetition ${i}`);
+// }
+
+// const friends = ["Tushar", "Prince", "Ayush"];
+
+// const type = [];
+// for (let i = 0; i < 3; i++) {
+//   console.log(friends[i]);
+
+//   // type[i] = typeof friends[i];
+//   type.push(typeof friends[i]);
+// }
+
+// console.log(type);
+
+///////////////////////////////////////
+// Looping Arrays, Breaking and Continuing
+const jonas = [
+  "Jonas",
+  "Schmedtmann",
+  2037 - 1991,
+  "teacher",
+  ["Michael", "Peter", "Steven"],
+  true,
+];
+const types = [];
+
+// console.log(jonas[0])
+// console.log(jonas[1])
+// ...
+// console.log(jonas[4])
+// jonas[5] does NOT exist
+
+for (let i = 0; i < jonas.length; i++) {
+  // Reading from jonas array
+  console.log(jonas[i], typeof jonas[i]);
+
+  // Filling types array
+  // types[i] = typeof jonas[i];
+  types.push(typeof jonas[i]);
+}
+
+console.log(types);
+
+const years = [1991, 2007, 1969, 2020];
+const ages = [];
+
+for (let i = 0; i < years.length; i++) {
+  ages.push(2037 - years[i]);
+}
+console.log(ages);
+
+// continue and break
+console.log("--- ONLY STRINGS ---");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] !== "string") continue;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
+
+console.log("--- BREAK WITH NUMBER ---");
+for (let i = 0; i < jonas.length; i++) {
+  if (typeof jonas[i] === "number") break;
+
+  console.log(jonas[i], typeof jonas[i]);
+}
