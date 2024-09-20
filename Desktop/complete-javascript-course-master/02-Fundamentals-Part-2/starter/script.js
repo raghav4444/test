@@ -129,6 +129,7 @@ console.log(scoreDolphins, scoreKoalas);
 checkWinner(scoreDolphins, scoreKoalas);
 
 */
+/*
 function average(a, b, c) {
   return (a + b + c) / 3;
 }
@@ -148,3 +149,85 @@ function checkwinner(AvgDolphins, Avgkoalas) {
 }
 const Winner = checkwinner(AvgDolphins, Avgkoalas);
 console.log(Winner);
+*/
+
+/*
+///////////////////////////////////////
+// Introduction to Arrays
+const friend1 = 'Michael';
+const friend2 = 'Steven';
+const friend3 = 'Peter';
+
+const friends = ["Michel","Steven","Jay"];
+console.log(friends);
+const y = new Array(1991, 1984, 2008, 2020);
+
+console.log(friends[0]);
+console.log(friends[2]);
+
+console.log(friends.length);
+console.log(friends[friends.length - 1]);
+
+friends[2] = 'Jay';
+console.log(friends);
+// friends = ['Bob', 'Alice']
+
+const firstName = 'Jonas';
+const jonas = [firstName, 'Schmedtmann', 2037 - 1991, 'teacher', friends];
+console.log(jonas);
+console.log(jonas.length);
+
+*/
+// const calcAge = function (birthYear) {
+//   return 2037 - birthYear;
+// };
+// const year = [2000, 2004, 2008, 2012];
+// console.log(calcAge(year)); //It returns NaN
+
+// const Age = [
+//   calcAge(year[0]),
+//   calcAge(year[1]),
+//   calcAge(year[2]),
+//   calcAge(year[3]),
+// ];
+// console.log(Age);
+
+// const friends = ["Michel", "Steven", "Petter"];
+// // Add elements
+// friends.push("Jay"); //At end
+// console.log(friends);
+// // console.log(friends.length);
+// friends.unshift("john"); //at Starting
+// console.log(friends);
+
+// // Remove element
+// console.log(friends.pop());
+// console.log(friends);
+// console.shift(friends);
+// console.log(friends);
+
+// Array Challenge
+/*
+function tip(Bill) {
+  if (Bill >= 50 && Bill <= 300) {
+    return Bill * 0.15;
+  } else {
+    return Bill * 0.2;
+  }
+}
+
+const Bills = [125, 555, 44];
+
+const totalBill = [
+  `Tip on ${Bills[0]} is ${tip(Bills[0])} and total bill is ${
+    Bills[0] + tip(Bills[0])
+  }`,
+  `Tip on ${Bills[1]} is ${tip(Bills[1])} and total bill is ${
+    Bills[1] + tip(Bills[1])
+  }`,
+  `Tip on ${Bills[2]} is ${tip(Bills[2])} and total bill is ${
+    Bills[2] + tip(Bills[2])
+  }`,
+];
+console.log(totalBill);
+*/
